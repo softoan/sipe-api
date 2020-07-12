@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Usuarios</title>
+</head>
+
+<body>
+    <h1>Total de usuarios: <%=datas.length%></h1>
+
+<div class="container row">
+
+    <table class="table table-bordered " style="max-width: 100%;">
+
+        <thead>
+            <tr>
+                <td>CONS_USUARIO</td>
+                <td>NIT_CLIENTE</td>
+                <td>CEDULA_USUARIO</td>
+                <td>CODIGO_USUARIO</td>
+                <td>NOMBRE_USUARIO</td>
+                <td>EMAIL</td>
+                <td>CONTRASENA</td>
+                <td>CODIGO_ROL</td>
+                <td>TIPO_SERVICIO</td>
+                <td>AREA_APROBADOR</td>
+                <td>ESTADO_USUARIO</td>
+                <td>USUARIO_CREACION</td>
+                <td>FECHA_CREACION</td>
+                <td>USUARIO_MODIFICACION</td>
+                <td>FECHA_MODIFICACION</td>
+            </tr>
+        </thead>
+    <%  datas.forEach(data => { %> 
+
+    <tbody>
+        <td><%=data.CONS_USUARIO%></td>
+        <td><%=data.NIT_CLIENTE%></td>
+        <td><%=data.CEDULA_USUARIO%></td>
+        <td><%=data.CODIGO_USUARIO%></td>
+        <td><%=data.NOMBRE_USUARIO%></td>
+        <td><%=data.EMAIL%></td>
+        <td><%=data.CONTRASENA%></td>
+        <td><%=data.CODIGO_ROL%></td>
+        <td><%=data.TIPO_SERVICIO%></td>
+        <td><%=data.AREA_APROBADOR%></td>
+        <td><%=data.ESTADO_USUARIO%></td>
+        <td><%=data.USUARIO_CREACION%></td>
+        <td><%=data.FECHA_CREACION%></td>
+        <td><%=data.USUARIO_MODIFICACION%></td>
+        <td><%=data.FECHA_MODIFICACION%></td>
+    </tbody>
+
+    <% });%>
+</table>
+</div>
+
+</body>
+
+</html>
+ 
